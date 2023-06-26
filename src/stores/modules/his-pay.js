@@ -15,7 +15,9 @@ const useHisPayStore = defineStore('his-pay', {
     startTimestamp:null,
     endTimestamp:null,
     // 总数据条数
-    total: 0
+    total: 0,
+    // 用户选中的条目信息
+    selections:null
   }),
   actions: {
     async fetchHisPayList() {

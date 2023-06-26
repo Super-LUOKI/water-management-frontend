@@ -16,14 +16,11 @@ import { storeToRefs } from 'pinia';
 import {saveCSV} from '@/utils'
 
 const taskStore = useTaskStore();
-const { collCode, watcherNum } = storeToRefs(taskStore)
+const { watcherNum } = storeToRefs(taskStore)
 
 
 const handleConditionQuery = () => {
-  taskStore.$patch({
-    watcherNum: watcherNum.value,
-    page:1
-  })
+  taskStore.page = 1
   taskStore.fetchTaskList()
 }
 

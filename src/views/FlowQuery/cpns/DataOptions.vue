@@ -22,7 +22,7 @@ const { deviceCode } = storeToRefs(flowStore)
 
 
 const handleConditionQuery = () => {
-  flowStore.$reset()
+  flowStore.page = 1
   flowStore.fetchFlowList()
 }
 

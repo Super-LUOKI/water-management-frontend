@@ -3,7 +3,7 @@
     <el-table :data="logList" stripe border :row-style="{ height: '40px' }" :cell-style="{ padding: '5px' }"
       style="font-size: 12px" show-overflow-tooltip>
       <el-table-column type="index" label="#" :index="(page - 1) * pageCount + 1" width="50" />
-      <el-table-column prop="log_type" label="日志类型" />
+      <el-table-column prop="log_type" label="操作类型" />
       <el-table-column prop="device_code" label="设备编码" />
       <el-table-column prop="operator" label="操作人" />
       <el-table-column label="操作时间">

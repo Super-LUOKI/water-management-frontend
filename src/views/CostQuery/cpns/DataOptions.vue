@@ -23,7 +23,7 @@ const { username, usercode } = storeToRefs(costStore)
 
 
 const handleConditionQuery = () => {
-  costStore.$reset()
+  costStore.page = 1
   costStore.fetchCostList()
 }
 

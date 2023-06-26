@@ -21,7 +21,7 @@ const { optType } = storeToRefs(logStore)
 
 
 const handleConditionQuery = () => {
-  logStore.$reset()
+  logStore.page = 1
   logStore.fetchLogList()
 }
 
