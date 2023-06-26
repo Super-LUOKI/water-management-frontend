@@ -1,6 +1,6 @@
 import HttpRequest from '../request/index'
 
-export function getLogs(page, pageCount, collCode, watcherNum) {
+export function getScheduleTask(page, pageCount, collCode, watcherNum) {
   return HttpRequest.get('/schedule', {
     params: {
       page: page,

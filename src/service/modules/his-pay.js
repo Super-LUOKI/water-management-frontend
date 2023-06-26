@@ -1,7 +1,7 @@
 import HttpRequest from '../request/index'
 
 // 开始事件和结束事件为时间戳
-export function getHisTrans(page, pageCount, address, deviceCode, userCode, username, startTimestamp, endTimestamp) {
+export function getHisPays(page, pageCount, address, deviceCode, userCode, username, startTimestamp, endTimestamp) {
   return HttpRequest.get('/hispay', {
     params: {
       page: page,
