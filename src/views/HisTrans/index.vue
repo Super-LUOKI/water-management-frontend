@@ -1,5 +1,5 @@
 <template>
-  <div class="his-trans">
+  <div class="his-trans content-warp">
     <h2>his-trans</h2>
   </div>
 </template>

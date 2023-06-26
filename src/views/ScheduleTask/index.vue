@@ -1,5 +1,5 @@
 <template>
-  <div class="schedule-task">
+  <div class="schedule-task content-warp">
     <h2>schedule-task</h2>
   </div>
 </template>
