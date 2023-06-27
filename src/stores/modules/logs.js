@@ -16,7 +16,7 @@ const useLogStore = defineStore('logs', {
   }),
   actions: {
     async fetchLogList() {
-      const res = await getLogs(this.regionId, this.page, this.pageCount, this.username, this.usercode)
+      const res = await getLogs(this.page, this.pageCount, this.optType)
       this.logList = res.data
       this.total = res.total
     }
