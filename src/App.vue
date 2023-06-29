@@ -34,7 +34,7 @@ watch(() => route.path, (path) => {
     <div class="content">
       <router-view />
     </div>
-    
+
   </div>
 </template>
 
